@@ -1,3 +1,11 @@
+## [1.1.1](https://github.com/aashari/nodejs-confluence-export/compare/v1.1.0...v1.1.1) (2025-05-07)
+
+
+### Bug Fixes
+
+* add missing npm scripts and update semantic-release config ([28868d0](https://github.com/aashari/nodejs-confluence-export/commit/28868d0c2751f0f8c12dc874181e05bd650dee2c))
+* update version and package name constants to match package.json ([be06b46](https://github.com/aashari/nodejs-confluence-export/commit/be06b46a857e96f69b3c6ff9f2074386e71e2cb1))
+
 # [1.1.0](https://github.com/aashari/nodejs-confluence-export/compare/v1.0.0...v1.1.0) (2025-05-07)
 
 
