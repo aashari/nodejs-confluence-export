@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/aashari/nodejs-confluence-export/compare/v1.0.0...v1.1.0) (2025-05-07)
+
+
+### Features
+
+* add semantic-release configuration ([d448069](https://github.com/aashari/nodejs-confluence-export/commit/d4480690f0a1f79a2e64f31c1ede46376188ce73))
+
 # 1.0.0 (2025-05-07)
 
 
