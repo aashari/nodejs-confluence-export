@@ -9,7 +9,7 @@
 		[
 			"@semantic-release/exec",
 			{
-				"prepareCmd": "node scripts/update-version.js ${nextRelease.version} && npm run build && chmod +x dist/index.js || true"
+				"prepareCmd": "npm run update:version -- ${nextRelease.version} && npm run build && chmod +x dist/index.js || true"
 			}
 		],
 		[
