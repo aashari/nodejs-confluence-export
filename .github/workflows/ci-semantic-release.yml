@@ -52,11 +52,7 @@ jobs:
                   git config --global user.email "github-actions[bot]@users.noreply.github.com"
                   git config --global user.name "github-actions[bot]"
 
-            # Step 8: Install semantic-release and plugins
-            - name: Install Semantic Release
-              run: npm install --no-save semantic-release @semantic-release/changelog @semantic-release/git @semantic-release/exec
-
-            # Step 9: Run semantic-release to analyze commits and publish to npm
+            # Step 8: Run semantic-release to analyze commits and publish to npm
             - name: Semantic Release
               id: semantic
               env:
