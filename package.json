@@ -1,6 +1,6 @@
 {
 	"name": "nodejs-confluence-export",
-	"version": "0.1.0",
+	"version": "1.0.0",
 	"description": "CLI tool to export Confluence pages by space with flexible filtering options.",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
