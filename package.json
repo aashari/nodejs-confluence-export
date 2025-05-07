@@ -25,7 +25,11 @@
 		"dev:cli": "DEBUG=true npm run build && DEBUG=true node dist/index.js",
 		"start:cli": "npm run build && node dist/index.js",
 		"typecheck": "tsc --noEmit",
-		"tsprune": "ts-prune --error"
+		"tsprune": "ts-prune --error",
+		"update:check": "npx npm-check-updates",
+		"update:deps": "npx npm-check-updates -u && npm install --legacy-peer-deps",
+		"update:version": "node scripts/update-version.js",
+		"publish:npm": "npm publish"
 	},
 	"keywords": [
 		"confluence",
