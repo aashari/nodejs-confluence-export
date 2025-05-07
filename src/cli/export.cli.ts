@@ -20,7 +20,7 @@ function register(program: Command) {
 		.option(
 			'-o, --output-dir <path>',
 			'Directory to save exported files.',
-			'./confluence_export',
+			'./output',
 		)
 		.option(
 			'-f, --format <format>',
