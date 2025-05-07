@@ -1,3 +1,16 @@
+## [1.1.2](https://github.com/aashari/nodejs-confluence-export/compare/v1.1.1...v1.1.2) (2025-05-07)
+
+
+### Bug Fixes
+
+* **ci:** include semantic-release in devDeps and update workflow ([57ed589](https://github.com/aashari/nodejs-confluence-export/commit/57ed589d5986a04fa0bc32a2f9bb8ad45e45916f))
+* **ci:** use npm run for update:version in semantic-release prepareCmd ([94fb1ca](https://github.com/aashari/nodejs-confluence-export/commit/94fb1caa56e691a41f9f3b00e13c1309cfd104ed))
+
+
+### Performance Improvements
+
+* Update dependencies ([519c49c](https://github.com/aashari/nodejs-confluence-export/commit/519c49c8efad862f9d5cdc7d288089952c5b0b36))
+
 ## [1.1.1](https://github.com/aashari/nodejs-confluence-export/compare/v1.1.0...v1.1.1) (2025-05-07)
 
 
