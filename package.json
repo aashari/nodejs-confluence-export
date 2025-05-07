@@ -1,5 +1,5 @@
 {
-	"name": "nodejs-confluence-export",
+	"name": "@aashari/nodejs-confluence-export",
 	"version": "1.0.0",
 	"description": "CLI tool to export Confluence pages by space with flexible filtering options.",
 	"main": "dist/index.js",
@@ -36,7 +36,7 @@
 		"atlassian"
 	],
 	"author": "Andi Ashari",
-	"license": "MIT",
+	"license": "ISC",
 	"devDependencies": {
 		"@semantic-release/changelog": "^6.0.3",
 		"@semantic-release/git": "^10.0.1",

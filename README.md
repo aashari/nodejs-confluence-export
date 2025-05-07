@@ -28,33 +28,20 @@ This CLI tool enables you to export entire Confluence spaces to your local files
 
 ---
 
-## Installation
+## Step 1: Get Your Atlassian API Token
 
-### Option 1: Global Installation
-
-```bash
-npm install -g nodejs-confluence-export
-```
-
-This makes the `confluence-export` command available globally.
-
-### Option 2: npx Usage
-
-Use without installing:
-
-```bash
-npx nodejs-confluence-export [commands]
-```
+1. Go to your Atlassian API token management page:
+   [https://id.atlassian.com/manage-profile/security/api-tokens](https://id.atlassian.com/manage-profile/security/api-tokens)
+2. Click **Create API token**.
+3. Give it a descriptive **Label** (e.g., `confluence-export-cli`).
+4. Click **Create**.
+5. **Copy the generated API token** immediately. You won't be able to see it again.
 
 ---
 
-## Authentication
+## Step 2: Configure Credentials
 
-Create an Atlassian API token from [Atlassian API tokens](https://id.atlassian.com/manage-profile/security/api-tokens).
-
-Configure your credentials using one of these methods:
-
-### Method 1: Environment Variables
+### Method A: Environment Variables
 
 Set these environment variables:
 
@@ -64,7 +51,7 @@ export ATLASSIAN_USER_EMAIL="your.email@example.com"
 export ATLASSIAN_API_TOKEN="your-api-token"
 ```
 
-### Method 2: .env File
+### Method B: .env File
 
 Create a `.env` file in your project directory:
 
@@ -78,36 +65,42 @@ ATLASSIAN_API_TOKEN=your-api-token
 
 # Usage Examples
 
-## Basic Space Export
+## Quick Use with `npx`
 
 Export a space to the default output directory (`./output`):
 
 ```bash
-confluence-export export --space SPACEKEY
+npx -y @aashari/nodejs-confluence-export export --space SPACEKEY
 ```
 
 Using inline environment variables:
 
 ```bash
-ATLASSIAN_SITE_NAME=yourcompany ATLASSIAN_USER_EMAIL=your.email@example.com ATLASSIAN_API_TOKEN=your-api-token confluence-export export --space SPACEKEY
+ATLASSIAN_SITE_NAME=yourcompany ATLASSIAN_USER_EMAIL=your.email@example.com ATLASSIAN_API_TOKEN=your-api-token npx -y @aashari/nodejs-confluence-export export --space SPACEKEY
 ```
 
-With npx:
+## Install Globally
 
 ```bash
-ATLASSIAN_SITE_NAME=yourcompany ATLASSIAN_USER_EMAIL=your.email@example.com ATLASSIAN_API_TOKEN=your-api-token npx nodejs-confluence-export export --space SPACEKEY
+npm install -g @aashari/nodejs-confluence-export
+```
+
+Then run directly:
+
+```bash
+confluence-export export --space SPACEKEY
 ```
 
 ## Custom Output Directory
 
 ```bash
-confluence-export export --space SPACEKEY --output-dir ./my-exports
+npx -y @aashari/nodejs-confluence-export export --space SPACEKEY --output-dir ./my-exports
 ```
 
 ## Choose Format (Markdown or HTML)
 
 ```bash
-confluence-export export --space SPACEKEY --format html
+npx -y @aashari/nodejs-confluence-export export --space SPACEKEY --format html
 ```
 
 ## Filter Pages to Exclude
@@ -115,19 +108,19 @@ confluence-export export --space SPACEKEY --format html
 Exclude a specific page and all its children:
 
 ```bash
-confluence-export export --space SPACEKEY --ignore parent:12345678
+npx -y @aashari/nodejs-confluence-export export --space SPACEKEY --ignore parent:12345678
 ```
 
 Exclude pages matching a title pattern:
 
 ```bash
-confluence-export export --space SPACEKEY --ignore title:DRAFT
+npx -y @aashari/nodejs-confluence-export export --space SPACEKEY --ignore title:DRAFT
 ```
 
 Use multiple filters:
 
 ```bash
-confluence-export export --space SPACEKEY --ignore parent:12345678 --ignore title:"Internal Only"
+npx -y @aashari/nodejs-confluence-export export --space SPACEKEY --ignore parent:12345678 --ignore title:"Internal Only"
 ```
 
 ---
@@ -187,7 +180,7 @@ If you encounter issues with the export:
 4. Use the `DEBUG=true` environment variable for detailed logs:
 
 ```bash
-DEBUG=true confluence-export export --space SPACEKEY
+DEBUG=true npx -y @aashari/nodejs-confluence-export export --space SPACEKEY
 ```
 
 ---
@@ -203,4 +196,4 @@ DEBUG=true confluence-export export --space SPACEKEY
 
 # License
 
-MIT
+ISC
