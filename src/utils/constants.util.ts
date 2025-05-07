@@ -9,13 +9,13 @@
  * Current application version
  * This should match the version in package.json
  */
-export const VERSION = '1.5.4';
+export const VERSION = '1.0.0';
 
 /**
  * Package name with scope
  * Used for initialization and identification
  */
-export const PACKAGE_NAME = 'nodejs-confluence-export';
+export const PACKAGE_NAME = '@aashari/nodejs-confluence-export';
 
 /**
  * CLI command name
